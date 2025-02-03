@@ -48,9 +48,8 @@ public class Game {
 
                 switch (choice) {
                     case "1":
-                        display("You have chosen to take the knife.");
-                        if (weaponsAvailable.size() > 2) display("You leave the other weapons and slide through the crack.");
-                        else display("You leave the other weapon and slide through the crack.");
+                        display("You have chosen to take the Sword.");
+                        display("You leave the other weapons behind and slide through the crack.");
                         display("You see the monster. You take your sword and look the creature in the eye.");
                         display("You must choose whether to swing or stab.");
 
@@ -70,24 +69,25 @@ public class Game {
 
                         weaponsAvailable.remove(0); // Remove the sword
 
-                        display("You rush back to the other side of the crack, and see your remaining options. Choose one: ");
+                        display("Wounded, you scramble back through the crack, barely escaping with your life.");
+                        display("Your sword is gone, but you still have other weapons behind left.");
+                        display("You must choose a different weapon to face the monster again.");
                         break;
 
                     case "2":
                         display("You have chosen the Bow and Arrow.");
-                        if (weaponsAvailable.size() > 2) display("You leave the other weapons and slide through the crack.");
-                        else display("You leave the other weapon and slide through the crack.");
+                        display("You leave the other weapons behind and slide through the crack.");
                         display("The monster sees you and starts charging.");
                         display("You quickly prepare your bow and shoot.");
                         display("The monster falls dead on the floor.");
                         display("-------------- VICTORY --------------");
                         display("You have defeated the monster! You walk out of the labyrinth safely with nothing but a scratch.");
+                        display("As you walk out, your eyes adjust to the harsh light.");
                         System.exit(0);
 
                     case "3":
-                        display("You have chosen the knife.");
-                        if (weaponsAvailable.size() > 2) display("You leave the other weapons and slide through the crack.");
-                        else display("You leave the other weapon and slide through the crack.");
+                        display("You have chosen the Knife.");
+                        display("You leave the other weapons behind and slide through the crack.");
                         display("You look the monster in the eye and charge with conviction, emitting a loud war cry.");
                         display("You jump into the air and hold out the knife. With bravery, you come ever closer to the monster.");
                         display("Alas! The monster has heard your war cry and slapped you out of the air.");
